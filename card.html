@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Document</title>
+    <style>
+        body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        }
+        article{
+            width: 100%;  
+            background: coral;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        section{
+            width: 100%;
+           
+        }
+        .card{
+            background-color:whitesmoke;
+            width: 400px;
+            height: 600px;
+            border-radius: 20px;
+            overflow: hidden; /*ocultar todo lo que se salga del contenedor .card*/
+            position: absolute;
+            -webkit-box-shadow: 7px 10px 18px -8px rgba(0,0,0,0.69);
+            -moz-box-shadow: 7px 10px 18px -8px rgba(0,0,0,0.69);
+            box-shadow: 7px 10px 18px -8px rgba(0,0,0,0.69);
+            
+        }
+        .card .padre{
+            width: 100%;
+            height: 60%;
+            
+        }
+        .card .padre img{
+            width: 100%;
+        }
+
+        .card .hijo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card .hijo div{
+            width: 140px;
+            height: 140px;
+            background: white;
+            border-radius: 50%;
+            top: 200px;
+            position: absolute;
+            border: 5px solid white;
+           
+        }
+
+        .card .contenido{
+            width: 100%;
+            text-align: center;
+           
+            
+        }
+
+        .contenido p, .contenido h2{
+            margin: 0px 0px;
+        }
+
+        .card .footerFlex{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            bottom: 0;
+
+
+        }
+        .card .footerFlex a{
+            color: black;
+            text-decoration: none;
+        }
+        .card .contenidoGrid{
+            display: grid;
+            width: 100%;
+            height: 120px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .card .contenidoGrid a img{
+            opacity: 0.5;
+        }
+        .card .contenidoGrid a img:hover{
+            opacity: 1;
+        }
+        .item, .item-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            
+        }
+
+        .item-2{
+            border: 1px solid #ddd;
+
+        }
+
+        .card .footer{
+            width: 100%;
+            height: 60px;
+            background:dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <article>
+        <section>
+            <div class="card">
+                <div class="padre">
+                    <img src="https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg" alt="pc">
+                    <div class="hijo">
+                        <div><img src="https://3ztech.com.co/wp-content/uploads/2022/11/foto_jessika.png" alt="Jessika Vallejo"></div>
+                    </div>
+                </div>
+                
+                <div class="contenido">
+                    <h2>Jessika Vallejo</h2>
+                    <p>Admon Negocios Internacioanles</p>
+
+                </div>
+
+                <div class="footerFlex">
+                    
+                    <div class="contenidoGrid">
+                        <div class="item">Colombia</div>
+                        <div class="item"><a href="mailto:jhon.e.mantilla@gmail.com">Send Email</a></div>
+                        <div class="item-2"><a href=""><img src="img/github.png" alt="github"></a></div>
+                        <div class="item-2"><a href=""><img src="img/facebook.png" alt="facebook"></a></div>
+                    </div>
+                    
+                    <div class="footer"><a href="https://3ztech.com.co/" target="_blank"><p>3ztech</p></a><p>&nbsp; &#169; 2023 </p></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <div class="padre">
+                    <img src="https://3ztech.com.co/wp-content/uploads/2022/11/pexels-sora-shimazaki-5926382.jpg" alt="pc">
+                    <div class="hijo">
+                        <div><img src="https://3ztech.com.co/wp-content/uploads/2022/11/JHON.png" alt="Jhon Mantilla"></div>
+                    </div>
+                </div>
+                
+                <div class="contenido">
+                    <h2>Jhon Mantilla</h2>
+                    <p>Ingeniero de Sistemas</p>
+
+                </div>
+
+                <div class="footerFlex">
+                    
+                    <div class="contenidoGrid">
+                        <div class="item">Colombia</div>
+                        <div class="item"><a href="mailto:jhon.e.mantilla@gmail.com">Send Email</a></div>
+                        <div class="item-2"><a href=""><img src="img/github.png" alt="github"></a></div>
+                        <div class="item-2"><a href=""><img src="img/facebook.png" alt="facebook"></a></div>
+                    </div>
+                    
+                    <div class="footer"><a href="https://3ztech.com.co/" target="_blank"><p>3ztech</p></a><p>&nbsp; &#169; 2023 </p></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <div class="padre">
+                    <img src="https://3ztech.com.co/wp-content/uploads/2022/11/code-g4c89e7e8f_640.jpg" alt="pc">
+                    <div class="hijo">
+                        <div><img src="https://3ztech.com.co/wp-content/uploads/2022/11/ZHOE-removebg-preview-1.png" alt="Zhoe Acevedo"></div>
+                    </div>
+                </div>
+                
+                <div class="contenido">
+                    <h2>Zhoe Acevedo</h2>
+                    <p>Tec. Análisis y Desarrollo</p>
+
+                </div>
+
+                <div class="footerFlex">
+                    
+                    <div class="contenidoGrid">
+                        <div class="item">Colombia</div>
+                        <div class="item"><a href="mailto:jhon.e.mantilla@gmail.com">Send Email</a></div>
+                        <div class="item-2"><a href=""><img src="img/github.png" alt="github"></a></div>
+                        <div class="item-2"><a href=""><img src="img/facebook.png" alt="facebook"></a></div>
+                    </div>
+                    
+                    <div class="footer"><a href="https://3ztech.com.co/" target="_blank"><p>3ztech</p></a><p>&nbsp; &#169; 2023 </p></div>
+                </div>
+            </div>
+        </section>
+
+
+    </article>
+</body>
+</html>
